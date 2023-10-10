@@ -34,3 +34,7 @@ jobs:
         working-directory: modern
       - run: npm run build
         working-directory: modern
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./build
